@@ -899,7 +899,7 @@ var initialState = {
 };
 
 function reducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initalState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
@@ -979,7 +979,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64995" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64978" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1156,4 +1156,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/vanilla-redux.e31bb0bc.js.map
+//# sourceMappingURL=/index.js.map
